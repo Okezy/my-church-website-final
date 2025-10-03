@@ -2,7 +2,7 @@
 
 .hero-section {
     /* FIX: Removed the leading slash (/) from the URL path */
-    background: url('placeholder-church.jpg') center/cover no-repeat; /* */
+    background: url('placeholder-church.png') center/cover no-repeat; /* */
     height: 60vh;
     display: flex;
     align-items: center;
