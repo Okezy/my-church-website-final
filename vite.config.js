@@ -5,7 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   
-  // ADD THIS BASE PATH FOR GITHUB PAGES
-  // The value must be the name of your GitHub repository, surrounded by slashes.
-  base: "/my-church-website/", 
+  // FINAL ATTEMPT FIX: Change base path to relative "./"
+  base: "./", 
 })
