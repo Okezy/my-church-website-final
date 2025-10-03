@@ -17,7 +17,7 @@ const Header = () => {
       <div className="logo">
         <Link to="/">
           <img 
-            src="church-logo.png" 
+            src="/church-logo.png" 
             alt="Catholic Church of the Presentation Logo" 
             className="header-logo"
           />
