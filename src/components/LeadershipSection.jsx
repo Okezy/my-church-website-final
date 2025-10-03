@@ -1,5 +1,4 @@
 // src/components/LeadershipSection.jsx
-import React from 'react';
 import './LeadershipSection.css';
 
 const staff = [

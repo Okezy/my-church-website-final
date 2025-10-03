@@ -1,5 +1,5 @@
 // src/pages/Contact.jsx (Updated)
-import React from 'react';
+
 import ContactInfo from '../components/ContactInfo';
 import SimpleForm from '../components/SimpleForm'; // We'll create this next
 

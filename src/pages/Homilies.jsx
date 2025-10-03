@@ -1,5 +1,5 @@
 // src/pages/Homilies.jsx
-import React from 'react';
+
 import HomilyCard from '../components/HomilyCard';
 import homiliesData from '../data/sermons.json'; // Renamed import, but file content is the data
 

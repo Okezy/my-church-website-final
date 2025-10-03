@@ -1,5 +1,5 @@
 // src/components/HomilyCard.jsx
-import React from 'react';
+
 import './HomilyCard.css';
 
 const HomilyCard = ({ homily }) => {

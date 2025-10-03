@@ -1,5 +1,4 @@
 // src/pages/About.jsx (COMPLETE CODE)
-import React from 'react';
 // Check that your components folder is named exactly 'components'
 import MissionCard from '../components/MissionCard'; 
 import LeadershipSection from '../components/LeadershipSection'; 

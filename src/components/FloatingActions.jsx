@@ -1,5 +1,5 @@
 // src/components/FloatingActions.jsx (COMPLETE CODE - Using Simple Icons)
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './FloatingActions.css';
 
 // *** INTEGRATION PLACEHOLDER FUNCTION ***

@@ -1,5 +1,5 @@
 // src/components/MissionCard.jsx (PLACEHOLDER)
-import React from 'react';
+import './MissionCard.css';
 
 const MissionCard = () => {
   const values = [

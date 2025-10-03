@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react'; // Removed useEffect and added useCallback
+import { useState, useCallback } from 'react'; // Removed useEffect and added useCallback
 import prayers from '../data/prayers.json';
 import './PrayerRotator.css';
 

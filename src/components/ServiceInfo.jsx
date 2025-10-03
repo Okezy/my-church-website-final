@@ -1,5 +1,4 @@
 // src/components/ServiceInfo.jsx (REVISED)
-import React from 'react';
 import './ServiceInfo.css';
 
 const ServiceInfo = () => {

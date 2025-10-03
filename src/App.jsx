@@ -1,6 +1,6 @@
-// src/App.jsx (COMPLETE CODE - Confirmed and Corrected)
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// src/App.jsx (FINAL CORRECTED CODE)
+// Fix 1: Removed redundant 'import React from 'react';'
+import { HashRouter, Routes, Route } from 'react-router-dom'; // Fix 2: Changed BrowserRouter to HashRouter
 
 // --- Global Components ---
 import Header from './components/Header';
@@ -11,15 +11,15 @@ import FloatingActions from './components/FloatingActions';
 import Home from './pages/Home';
 import About from './pages/About'; 
 import Homilies from './pages/Homilies';
-import Events from './pages/Events'; // Import must exist in src/pages/Events.jsx
+import Events from './pages/Events'; 
 import Contact from './pages/Contact';
 
 function App() {
   return (
-    <Router>
+    // Fix 2: Use HashRouter for reliable GitHub Pages deployment
+    <HashRouter>
       <Header />
       
-      {/* THIS IS THE CRITICAL LINE */}
       <FloatingActions /> 
       
       <main>
@@ -27,13 +27,13 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/homilies" element={<Homilies />} />
-          <Route path="/events" element={<Events />} /> {/* CORRECTED: Path is now lowercase */}
+          <Route path="/events" element={<Events />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
       
       <Footer />
-    </Router>
+    </HashRouter>
   );
 }
 

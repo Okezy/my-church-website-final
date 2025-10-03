@@ -1,6 +1,6 @@
 // src/components/AnnouncementSlider.jsx (CLEANED)
 // Removed 'useRef' import
-import React, { useState, useEffect } from 'react'; 
+import { useState, useEffect } from 'react'; 
 import './AnnouncementSlider.css'; 
 
 const announcements = [

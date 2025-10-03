@@ -1,5 +1,5 @@
 // src/pages/Events.jsx
-import React from 'react';
+
 import EventCard from '../components/EventCard';
 import eventsData from '../data/events.json';
 

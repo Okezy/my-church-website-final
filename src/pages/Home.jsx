@@ -1,5 +1,5 @@
 // src/pages/Home.jsx (COMPLETE CODE)
-import React from 'react';
+
 import Hero from '../components/Hero';
 import ServiceInfo from '../components/ServiceInfo';
 import PrayerRotator from '../components/PrayerRotator'; // NEW IMPORT
