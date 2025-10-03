@@ -18,6 +18,7 @@ function App() {
           <Route path="*" element={<Navigate to="/" replace />} /> 
 
           {/* Other routes follow */}
+          <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/homilies" element={<Homilies />} />
           <Route path="/events" element={<Events />} />

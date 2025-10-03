@@ -31,7 +31,7 @@ const ContactInfo = () => {
                for '47/49 Aina Rd, Agiliti, Mile 12, Lagos' before final deployment. */}
         <iframe
           title="Church Location Map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000.00!2d-74.0059728!3d40.7127753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDU0JzI3LjkiTiA3NMKwMDYnMTkuNiJX!5e0!3m2!1sen!2sus!4v1600000000000"
+          src="https://www.google.com/maps/place/47,+49+Aina+Rd,+Ikosi+Ketu,+Lagos+105102,+Lagos,+Nigeria/@6.6215199,3.3902013,16.49z/data=!4m5!3m4!1s0x103b9319b4ad4ec5:0xf00078b16565579c!8m2!3d6.619043!4d3.3966754?hl=en-US&entry=ttu&g_ep=EgoyMDI1MDkzMC4wIKXMDSoASAFQAw%3D%3D://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000.00!2d-74.0059728!3d40.7127753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDU0JzI3LjkiTiA3NMKwMDYnMTkuNiJX!5e0!3m2!1sen!2sus!4v1600000000000"
           width="100%"
           height="300"
           style={{ border: 0 }}
