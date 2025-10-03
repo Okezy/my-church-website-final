@@ -1,0 +1,30 @@
+
+[
+  {
+    "id": 101,
+    "name": "Mid-Week Bible Study",
+    "date": "Wednesday, October 9",
+    "time": "7:00 PM",
+    "location": "Church Annex, Room 102",
+    "description": "A deep dive into the Book of Romans. All are welcome!",
+    "type": "Study"
+  },
+  {
+    "id": 102,
+    "name": "Community Service Day",
+    "date": "Saturday, October 12",
+    "time": "9:00 AM",
+    "location": "Local Food Bank",
+    "description": "Volunteer to help stock shelves and serve our community.",
+    "type": "Outreach"
+  },
+  {
+    "id": 103,
+    "name": "Youth Group Pizza Night",
+    "date": "Friday, October 18",
+    "time": "6:30 PM",
+    "location": "Youth Hall",
+    "description": "Fellowship, games, and pizza for all high school students.",
+    "type": "Youth"
+  }
+]

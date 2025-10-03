@@ -1,0 +1,78 @@
+/* src/components/FloatingActions.css (COMPLETE CODE - with Stable Animation) */
+
+/* Define the keyframes for the shaking animation */
+@keyframes shake {
+    0%, 100% { transform: translate(0, 0); } /* Use translate(x, y) for smooth GPU acceleration */
+    10%, 30%, 50%, 70%, 90% { transform: translate(-3px, 0); }
+    20%, 40%, 60%, 80% { transform: translate(3px, 0); }
+}
+
+.floating-actions-container {
+    /* Adjusted bottom position */
+    position: fixed;
+    bottom: 50px; 
+    right: 20px;
+    z-index: 1100; /* Increased z-index to ensure it is always on top */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.floating-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.floating-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Chat Button Styling with Shaking Animation */
+.chat-btn {
+    background-color: #3498db; 
+    order: 1; 
+    
+    /* Apply the shake animation */
+    animation: shake 2s ease-in-out infinite alternate; 
+}
+
+.chat-btn:hover {
+    background-color: #2980b9;
+    /* Stop shaking on hover */
+    animation: none; 
+}
+
+/* Scroll Top Button Styling */
+.scroll-top-btn {
+    background-color: #e74c3c; 
+    order: 2; 
+}
+
+.scroll-top-btn:hover {
+    background-color: #c0392b;
+}
+
+/* --- Mobile Adjustments --- */
+@media (max-width: 600px) {
+    .floating-actions-container {
+        bottom: 30px; 
+        right: 15px;
+    }
+    .floating-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+}

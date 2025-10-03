@@ -1,0 +1,118 @@
+/* src/components/AnnouncementSlider.css (UPDATED for Bolder Image & Animation) */
+.announcement-slider-section {
+    background-color: #f0f4f7;
+    padding: 3rem 20px;
+    margin: 2rem 0;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden; /* Hide overflowing content during animation */
+    position: relative; /* Needed for absolute positioning of children if we do more advanced slide animations */
+}
+
+.slider-content-wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto 1.5rem auto;
+    gap: 2rem;
+    text-align: left;
+    position: relative; /* To position the sliding content */
+    opacity: 1; /* Default opacity */
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out; /* Slower transition */
+}
+
+/* Styles for when a slide is transitioning out/in */
+.slider-content-wrapper.transitioning {
+    opacity: 0;
+    transform: translateX(100%); /* Start off-screen to the right */
+}
+
+/* When the new content loads, it fades in from the left */
+.slider-content-wrapper.transitioning.next {
+    transform: translateX(0); /* Move back to normal position */
+    opacity: 1; /* Fade in */
+}
+
+/* Image styling - Bolder look */
+.slider-image-placeholder {
+    width: 180px; /* Slightly larger image */
+    height: 180px;
+    object-fit: contain;
+    border-radius: 8px; /* Slightly more rounded */
+    flex-shrink: 0;
+    border: 3px solid #3498db; /* Bolder, colored border */
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+}
+
+/* Rest of the styles remain mostly the same */
+.slider-text {
+    flex-grow: 1;
+}
+
+.slider-badge {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    padding: 0.3rem 0.7rem;
+    border-radius: 3px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.slider-text h3 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.slider-text p {
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.slider-link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.slider-dot {
+    height: 12px; /* Slightly larger dots */
+    width: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out; /* Add transform for active dot */
+}
+
+.slider-dot:hover {
+    transform: scale(1.2); /* Enlarge on hover */
+}
+
+.slider-dot.active {
+    background-color: #3498db;
+    transform: scale(1.3); /* Active dot is more prominent */
+}
+
+/* Responsive adjustment */
+@media (max-width: 650px) {
+    .slider-content-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .slider-image-placeholder {
+        margin-bottom: 1.5rem; /* Add space below image in column layout */
+    }
+}

@@ -1,0 +1,64 @@
+/* src/components/HomilyCard.css */
+.homily-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.homily-card:hover {
+    transform: translateY(-5px);
+}
+
+.homily-info h3 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.homily-info p {
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+}
+
+.homily-info .speaker {
+    color: #e74c3c; /* Red accent */
+}
+
+.homily-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.action-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.action-link.video {
+  background-color: #e74c3c; /* Red/Orange */
+  color: white;
+}
+
+.action-link.video:hover {
+  background-color: #c0392b;
+}
+
+.action-link.notes {
+  background-color: #3498db; /* Blue */
+  color: white;
+}
+
+.action-link.notes:hover {
+  background-color: #2980b9;
+}

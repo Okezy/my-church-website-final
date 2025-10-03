@@ -1,0 +1,30 @@
+
+[
+  {
+    "id": 1,
+    "title": "The Power of Forgiveness",
+    "speaker": "Pastor John Doe",
+    "date": "2025-10-06",
+    "series": "Foundations of Faith",
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "notesUrl": "/notes/sermon-1.pdf"
+  },
+  {
+    "id": 2,
+    "title": "Living a Life of Service",
+    "speaker": "Associate Pastor Jane Smith",
+    "date": "2025-09-29",
+    "series": "Community and Outreach",
+    "videoUrl": "https://www.youtube.com/embed/ABCDEFG1234",
+    "notesUrl": "/notes/sermon-2.pdf"
+  },
+  {
+    "id": 3,
+    "title": "Walking by Faith",
+    "speaker": "Pastor John Doe",
+    "date": "2025-09-22",
+    "series": "Foundations of Faith",
+    "videoUrl": "https://www.youtube.com/embed/HIJKLMNOP567",
+    "notesUrl": "/notes/sermon-3.pdf"
+  }
+]

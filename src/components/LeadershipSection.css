@@ -1,0 +1,50 @@
+/* src/components/LeadershipSection.css */
+.leadership-section {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.leadership-section h2 {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.staff-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.staff-img-placeholder {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: #3498db;
+}
+
+.staff-card h3 {
+    margin-bottom: 0.2rem;
+    color: #e74c3c;
+}
+
+.staff-title {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.staff-bio {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}

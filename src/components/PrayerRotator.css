@@ -1,0 +1,141 @@
+/* src/components/PrayerRotator.css */
+.prayer-rotator-section {
+    padding: 3rem 20px;
+    background-color: #f7f9fb; /* Light background to make it stand out */
+    text-align: center;
+}
+
+.prayer-section-title {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.prayer-card-container {
+    max-width: 800px; /* Constrain the width of the card */
+    margin: 0 auto;
+    position: relative; /* For absolute positioning of arrows */
+    display: flex;
+    align-items: center;
+}
+
+.prayer-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    flex-grow: 1; /* Take up all available space */
+    min-height: 400px; /* Ensure card is large enough */
+    text-align: center;
+    border-top: 5px solid #3498db;
+    overflow-y: auto; /* Allow scrolling if prayer content is too long */
+    max-height: 450px;
+}
+
+.prayer-title {
+    color: #e74c3c; /* Red accent */
+    font-size: 2.2rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.prayer-latin-title {
+    color: #95a5a6;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.prayer-content {
+    text-align: left;
+    max-width: 90%;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.prayer-line {
+    margin: 0.8rem 0;
+}
+
+/* Navigation Buttons */
+.prayer-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 2rem;
+    line-height: 1;
+    z-index: 10;
+    border-radius: 50%; /* Circular buttons */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.prayer-nav-btn:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.prayer-nav-btn.left {
+    left: -25px; /* Pull button outside the card edge */
+}
+
+.prayer-nav-btn.right {
+    right: -25px; /* Pull button outside the card edge */
+}
+
+/* Dots Indicator */
+.prayer-dots {
+    margin-top: 2rem;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #3498db;
+    transform: scale(1.2);
+}
+
+/* --- MOBILE ADJUSTMENTS --- */
+@media (max-width: 600px) {
+    .prayer-rotator-section {
+        padding: 2rem 5px;
+    }
+    .prayer-section-title {
+        font-size: 1.6rem;
+    }
+    .prayer-card-container {
+        max-width: 95%; 
+    }
+    .prayer-card {
+        padding: 20px 10px;
+        min-height: 350px;
+        max-height: 400px;
+    }
+    .prayer-title {
+        font-size: 1.8rem;
+    }
+    /* Move arrows to the edge of the screen */
+    .prayer-nav-btn.left {
+        left: 5px; 
+    }
+    .prayer-nav-btn.right {
+        right: 5px; 
+    }
+}

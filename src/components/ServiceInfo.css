@@ -1,0 +1,70 @@
+/* src/components/ServiceInfo.css (FINAL CODE with Aggressive Mobile Spacing) */
+.service-info-section {
+    padding: 2rem 0; /* Default desktop padding */
+    text-align: center;
+    background-color: white; 
+}
+
+/* Style the main title */
+.service-info-section h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 2rem; 
+    margin-top: 0; 
+}
+
+.service-details {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; 
+    margin-top: 2rem;
+}
+
+.detail-box {
+    flex: 1 1 250px; 
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.detail-box h3 {
+    color: #e74c3c; 
+    margin-top: 0;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.detail-box p {
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+.detail-box a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* --- MOBILE SPECIFIC ADJUSTMENTS --- */
+@media (max-width: 768px) {
+    .service-info-section {
+        /* AGGRESSIVE PUSH DOWN FIX: Increased top padding for maximum separation */
+        padding-top: 6rem; 
+        padding-bottom: 2rem;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* Keep H2 margin-top at 0 to prevent margin collapse issues */
+    .service-info-section h2 {
+        margin-top: 0; 
+        font-size: 1.8rem;
+    }
+    
+    .detail-box {
+        margin-bottom: 20px; 
+        flex-basis: 100%; 
+    }
+}

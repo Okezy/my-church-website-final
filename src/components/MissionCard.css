@@ -1,0 +1,33 @@
+/* src/components/MissionCard.css */
+.mission-vision-section {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.card-item {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+}
+
+.mission-title {
+    color: #3498db;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.vision-title {
+    color: #e74c3c;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.card-item p {
+    line-height: 1.6;
+    color: #555;
+}
