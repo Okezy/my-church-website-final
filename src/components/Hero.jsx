@@ -1,4 +1,5 @@
-// src/components/Hero.jsx (UPDATED)
+// src/components/Hero.jsx (FINAL CORRECTED CODE)
+
 import './Hero.css';
 
 const Hero = () => {
@@ -17,9 +18,11 @@ const Hero = () => {
         <p>Gathering to worship, growing in faith, serving our world.</p>
         
         <div className="hero-actions">
-          <a href="/about" className="cta-button primary">New Here? Plan Your Visit</a>
-          {/* Updated button text to Homily */}
-          <a href="/homilies" className="cta-button secondary">Watch Latest Homily</a>
+          {/* FIX: Use hash link for HashRouter navigation */}
+          <a href="#/about" className="cta-button primary">New Here? Plan Your Visit</a>
+          
+          {/* FIX: Use hash link for HashRouter navigation */}
+          <a href="#/homilies" className="cta-button secondary">Watch Latest Homily</a>
         </div>
       </div>
     </div>

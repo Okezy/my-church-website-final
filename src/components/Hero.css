@@ -1,8 +1,8 @@
-/* src/components/Hero.css (FINAL CODE) */
+/* src/components/Hero.css (FINAL CORRECTED CODE) */
 
 .hero-section {
-    /* Assuming you have a placeholder image in the public folder */
-    background: url('/placeholder-church.jpg') center/cover no-repeat;
+    /* FIX: Removed the leading slash (/) from the URL path */
+    background: url('placeholder-church.jpg') center/cover no-repeat; /* */
     height: 60vh;
     display: flex;
     align-items: center;
@@ -10,8 +10,8 @@
     text-align: center;
     color: white;
     /* Consistent gap below the Hero for desktop/large screen */
-    margin-bottom: 2rem; 
-    margin-top: 0; 
+    margin-bottom: 2rem;
+    margin-top: 0;
     position: relative;
 }
 
@@ -62,7 +62,7 @@
 }
 
 .cta-button.primary {
-    background-color: #3498db; 
+    background-color: #3498db;
     color: white;
 }
 
@@ -85,10 +85,10 @@
 @media (max-width: 768px) {
     /* FIX 1: Push the Hero section down from the header */
     .hero-section {
-        margin-top: 70px; 
-        height: 50vh; 
+        margin-top: 70px;
+        height: 50vh;
         /* FIX 2: Ensure gap below the hero is consistent */
-        margin-bottom: 2rem; 
+        margin-bottom: 2rem;
     }
 
     .hero-overlay h1 {
