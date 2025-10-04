@@ -1,34 +1,41 @@
-// src/App.jsx 
+// src/App.jsx (CORRECTED FOR GITHUB PAGES DEPLOYMENT)
 
-// STEP 1: Ensure you import Navigate
+// STEP 1: CHANGE BROWSERROUTER BACK TO HASHROUTER
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'; 
 
-// ... other imports ...
+// --- Global Components (You must have these imported) ---
+import Header from './components/Header'; 
+import Footer from './components/Footer'; 
+import FloatingActions from './components/FloatingActions'; 
+// --- Page Components (You must have these imported) ---
+import Home from './pages/Home'; 
+import About from './pages/About'; 
+import Homilies from './pages/Homilies';
+import Events from './pages/Events'; 
+import Contact from './pages/Contact';
 
 function App() {
   return (
-    <HashRouter>
+    // STEP 2: USE HASHROUTER
+    <HashRouter> 
       <Header /> 
       
-      {/* ... FloatingActions ... */}
+      <FloatingActions /> 
       
       <main>
         <Routes>
-          {/* 1. Define the Home route as the primary match */}
+          {/* Define your routes */}
           <Route path="/" element={<Home />} />
-          
-          {/* 2. *** THE CRITICAL REDIRECT FIX *** */}
-          {/* This route catches any path that doesn't match a defined route, 
-             which includes the initial bare URL load, and forces a redirect 
-             to the Home route ("/") which is read by HashRouter as "#/". 
-           */}
-          <Route path="*" element={<Navigate to="/" replace />} /> 
-
-          {/* Other routes follow */}
           <Route path="/about" element={<About />} />
           <Route path="/homilies" element={<Homilies />} />
           <Route path="/events" element={<Events />} />
           <Route path="/contact" element={<Contact />} />
+
+          {/* This route is CRITICAL for GitHub Pages, as it forces the initial load 
+              on the bare URL (e.g., /my-church-website/) to resolve to the Home page (#/)
+           */}
+          <Route path="*" element={<Navigate to="/" replace />} /> 
+
         </Routes>
       </main>
       
