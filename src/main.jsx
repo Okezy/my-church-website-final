@@ -10,7 +10,7 @@ import './index.css';
 ReactDOM.createRoot(document.getElementById('root')).render(
   // Removed the HashRouter wrapper from main.jsx
   // The Router component is now inside App.jsx
-  <React.StrictMode>
+  <div>
     <App />
-  </React.StrictMode>,
+  </div>
 );

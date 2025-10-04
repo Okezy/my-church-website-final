@@ -17,7 +17,7 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    // STEP 2: USE HASHROUTER
+    // STEP 2: USE ROUTER
     <Router> 
       <Header /> 
       
