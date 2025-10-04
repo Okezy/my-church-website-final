@@ -1,6 +1,6 @@
-// src/App.jsx (CORRECTED FOR GITHUB PAGES DEPLOYMENT)
+// src/App.jsx (FINAL CORRECTED FOR GITHUB PAGES DEPLOYMENT)
 
-// STEP 1: CHANGE BROWSERROUTER BACK TO HASHROUTER
+// STEP 1: HASHROUTER is Correct for GH Pages
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'; 
 
 // --- Global Components (You must have these imported) ---
@@ -17,22 +17,26 @@ import Contact from './pages/Contact';
 function App() {
   return (
     // STEP 2: USE HASHROUTER
-    <HashRouter> 
+    <Router> 
       <Header /> 
       
       <FloatingActions /> 
       
       <main>
         <Routes>
-          {/* Define your routes */}
-          <Route path="/" element={<Home />} />
+          
+          {/* 1. HOME ROUTE: Added 'index' to mark it as the default route. */}
+          <Route index path="/" element={<Home />} /> 
+          
+          {/* Other routes follow */}
           <Route path="/about" element={<About />} />
           <Route path="/homilies" element={<Homilies />} />
           <Route path="/events" element={<Events />} />
           <Route path="/contact" element={<Contact />} />
 
-          {/* This route is CRITICAL for GitHub Pages, as it forces the initial load 
-              on the bare URL (e.g., /my-church-website/) to resolve to the Home page (#/)
+          {/* 2. REDIRECT ROUTE: Moved to the very bottom to serve as the final catch-all.
+              It catches the initial bare URL load (e.g., /my-church-website/) 
+              and redirects to the home route.
            */}
           <Route path="*" element={<Navigate to="/" replace />} /> 
 
@@ -40,7 +44,7 @@ function App() {
       </main>
       
       <Footer />
-    </HashRouter>
+    </Router>
   );
 }
 

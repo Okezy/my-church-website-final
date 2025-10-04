@@ -2,8 +2,7 @@
   "name": "my-church-website",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://okezy.github.io/my-church-website/",
-  "type": "module",
+  "homepage": "https://okezy.github.io/my-church-website-final/",
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=./",
