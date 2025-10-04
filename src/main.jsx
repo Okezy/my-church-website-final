@@ -1,5 +1,5 @@
 // src/main.jsx (FINAL CORRECTED CODE)
-// Removed: import React from 'react'; - This is often implicit in Vite/modern setups
+import React from 'react'; 
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import './index.css';

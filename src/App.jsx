@@ -1,7 +1,8 @@
 // src/App.jsx (FINAL CORRECTED FOR GITHUB PAGES DEPLOYMENT)
 
 // STEP 1: HASHROUTER is Correct for GH Pages
-import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'; 
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 
 // --- Global Components (You must have these imported) ---
 import Header from './components/Header'; 
